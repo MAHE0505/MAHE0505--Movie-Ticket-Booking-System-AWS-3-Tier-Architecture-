@@ -1,1 +1,0 @@
-# MAHE0505--Movie-Ticket-Booking-System-AWS-3-Tier-Architecture-
