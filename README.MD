@@ -1,7 +1,7 @@
 # 🎥  Movie Ticket Booking System (AWS 3-Tier Architecture)
 
 ## 📌 Introduction
-The **Random Movie Ticket Booking System** is a web-based application designed with **AWS 3-Tier Architecture** to ensure **scalability**, **security**, and **high availability**.  
+The **Movie Ticket Booking System** is a web-based application designed with **AWS 3-Tier Architecture** to ensure **scalability**, **security**, and **high availability**.  
 It allows users to:
 - Browse movies  
 - Select show timings  
@@ -163,11 +163,6 @@ Below is the configuration for **Web, App, and Database** layers.
 
 ---
 
-### ⚡ Best Practices
-- Use **least privilege principle**: allow only the required ports.  
-- Keep **RDS** private with no direct internet access.  
-- Enable **VPC Flow Logs** to monitor traffic activity.  
-- Regularly **audit security groups** to avoid misconfigurations.
 
 ## 🌐 Elastic IP (EIP)
 
@@ -203,11 +198,6 @@ Unlike a normal public IP assigned to an instance (which can change when the ins
   3. Click **Associate**
 
 ---
-
-### ⚡ Best Practices
-- **Release unused EIPs** – AWS charges for unassociated Elastic IPs.  
-- **Use EIPs only for resources needing stable public IPs**.  
-- **Keep track of IPs** – Name them logically (e.g., `movie-frontend-eip`, `movie-nat-eip`).
 
 ![](./img3/eliastic.png)
 ---
@@ -247,11 +237,6 @@ Below is the snapshot of how instances are deployed:
 
 ---
 
-### ⚡ Best Practices
-- Use **t2.micro** only for testing/demo; switch to **t3.small** or higher for production.  
-- Assign **Elastic IP** to the frontend instance for stable public access.  
-- Enable **CloudWatch Monitoring** for instance performance tracking.  
-- Regularly **rotate SSH key pairs** for better security.
 
 ## 5. Launch RDS
 
